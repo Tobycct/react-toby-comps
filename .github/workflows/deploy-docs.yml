@@ -4,6 +4,11 @@ name: Deploy Dumi Docs to GitHub Pages
 on:
   push:
     branches: [main]
+  # 新增：授予权限（关键！）
+  permissions:
+    contents: write # 允许写入仓库内容（推送分支、提交代码）
+    pages: write # 允许操作 GitHub Pages（可选，部分环境需要）
+    id-token: write # 可选，用于身份验证
 
 jobs:
   deploy:
