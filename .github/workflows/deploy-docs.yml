@@ -26,7 +26,7 @@ jobs:
 
       # 4. 构建 Dumi 文档（生成静态产物）
       - name: Build docs
-        run: npm run build
+        run: npm run doc:build
 
       # 5. 部署到 GitHub Pages（使用现成的 Action 工具）
       - name: Deploy to GitHub Pages
@@ -35,7 +35,7 @@ jobs:
           # GitHub 密钥（无需手动创建，Actions 自动提供）
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # 构建产物目录（与 dumi.config 中的 outputPath 一致）
-          publish_dir: ./docs
+          publish_dir: ./docs-dist
           # 部署到 gh-pages 分支（默认，无需修改）
           publish_branch: gh-pages
           # 强制覆盖历史提交（避免冲突）

@@ -29,7 +29,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:dev": "npm-run-all -p jest-preview test:watch",
-    "start": "node pack"
+    "start": "node pack",
+    "deploy": "gh-pages -d docs-dist"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -60,6 +61,7 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "father-build": "^1.20.4",
+    "gh-pages": "^6.3.0",
     "husky": "^7.0.4",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",

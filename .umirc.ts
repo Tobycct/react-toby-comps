@@ -9,7 +9,7 @@ export default defineConfig({
   title: 'react-toby-comps',
   favicon: logo,
   logo: logo,
-  outputPath: 'docs',
+  outputPath: 'docs-dist',
   mode: 'doc',
   resolve: {
     includes: ['mdx'],
@@ -65,4 +65,24 @@ export default defineConfig({
   // Because of using GitHub Pages
   base: repo ? `/${repo}/` : '/',
   publicPath: repo ? `/${repo}/` : '/',
+  styles: [
+    `
+    #root .__dumi-default-menu-header p {
+      display:none;
+    }
+    #root .__dumi-default-menu-header h1 {
+      font-size: 24px;
+      margin: 16px auto;
+    }
+
+    #root .__dumi-default-menu-header{
+      padding-top: 10px;
+    }
+
+    #root .__dumi-default-menu-logo{
+      display:none;
+    }
+
+    `,
+  ],
 });

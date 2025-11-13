@@ -54,7 +54,16 @@
     "dumi-theme-default/es/builtins/Example.js": "1.1.22",
     "dumi-theme-default/es/builtins/Badge.js": "1.1.22",
     "dumi-theme-default/es/builtins/Alert.js": "1.1.22",
-    "dumi-theme-default/es/builtins/API.js": "1.1.22"
+    "dumi-theme-default/es/builtins/API.js": "1.1.22",
+    "/Users/toby/react-toby-comps/node_modules/@umijs/preset-built-in/node_modules/@umijs/renderer-react/dist/index.js": "3.5.27",
+    "/Users/toby/react-toby-comps/node_modules/@umijs/preset-built-in/node_modules/@umijs/runtime": "3.5.27",
+    "/Users/toby/react-toby-comps/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs": "1.1.43",
+    "/Users/toby/react-toby-comps/node_modules/dumi/node_modules/dumi-theme-default/es/layout.js": "1.1.22",
+    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/asyncToGenerator": "7.12.5",
+    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/slicedToArray": "7.12.5",
+    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/regenerator": "7.12.5",
+    "/Users/toby/react-toby-comps/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/theme/layout": "1.1.43",
+    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/extends": "7.12.5"
   },
   "config": {
     "theme": {},
@@ -64,18 +73,20 @@
     "bigfishVersion": "null"
   },
   "tmpDeps": {
-    "/Users/toby/react-toby-comps/node_modules/@umijs/preset-built-in/node_modules/@umijs/renderer-react/dist/index.js": "3.5.27",
-    "/Users/toby/react-toby-comps/node_modules/@umijs/preset-built-in/node_modules/@umijs/runtime": "3.5.27",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/preset-built-in/node_modules/@umijs/renderer-react/dist/index.js": "3.5.27",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/preset-built-in/node_modules/@umijs/runtime": "3.5.27",
     "regenerator-runtime/runtime": "0.13.5",
     "core-js": "3.6.5",
     "react": "17.0.2",
-    "/Users/toby/react-toby-comps/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs": "1.1.43",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs": "1.1.43",
     "dumi-theme-default/es/builtins/Previewer.js": "1.1.22",
     "dumi/theme": "1.1.43",
-    "/Users/toby/react-toby-comps/node_modules/dumi/node_modules/dumi-theme-default/es/layout.js": "1.1.22",
-    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/asyncToGenerator": "7.12.5",
-    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/slicedToArray": "7.12.5",
-    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/regenerator": "7.12.5",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/dumi/node_modules/dumi-theme-default/es/layout.js": "1.1.22",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/asyncToGenerator": "7.12.5",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/slicedToArray": "7.12.5",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/regenerator": "7.12.5",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/theme/layout": "1.1.43",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/extends": "7.12.5",
     "dumi-theme-default/es/builtins/Tree.js": "1.1.22",
     "dumi-theme-default/es/builtins/Table.js": "1.1.22",
     "dumi-theme-default/es/builtins/SourceCode.js": "1.1.22",
@@ -83,7 +94,14 @@
     "dumi-theme-default/es/builtins/Badge.js": "1.1.22",
     "dumi-theme-default/es/builtins/Alert.js": "1.1.22",
     "dumi-theme-default/es/builtins/API.js": "1.1.22",
-    "/Users/toby/react-toby-comps/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/theme/layout": "1.1.43",
-    "/Users/toby/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/extends": "7.12.5"
+    "sortablejs": "1.15.0",
+    "react-i18next": "11.17.4",
+    "@react-spring/web": "9.4.5",
+    "nanoid": "3.3.11",
+    "react-transition-group": "4.4.2",
+    "clsx": "1.2.0",
+    "styled-components": "5.3.5",
+    "w-touch": "2.0.0",
+    "/Users/toby/TOBY-review-projects/react-toby-comps/node_modules/@umijs/bundler-utils/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral": "7.12.5"
   }
 }
