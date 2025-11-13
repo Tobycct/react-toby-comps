@@ -1,0 +1,118 @@
+{
+  "name": "react-toby-comps",
+  "version": "1.0.1",
+  "description": "React hooks based components for desktop",
+  "homepage": "https://github.com/Tobycct/react-toby-comps",
+  "keywords": [
+    "react",
+    "component",
+    "hooks"
+  ],
+  "engines": {
+    "node": "16"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/Tobycct/react-toby-comps",
+  "bugs": {
+    "url": "https://github.com/Tobycct/react-toby-comps/issues"
+  },
+  "main": "dist/index.js",
+  "module": "es/index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "build": "father-build && tsc",
+    "doc:dev": "dumi dev",
+    "doc:build": "dumi build",
+    "jest-preview": "jest-preview",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:dev": "npm-run-all -p jest-preview test:watch",
+    "start": "node pack"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "^8.0.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.1",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-is": "^17.0.3",
+    "@types/react-transition-group": "^4.4.5",
+    "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "animate.css": "^4.1.1",
+    "babel-jest": "^28.1.0",
+    "babel-plugin-styled-components": "^2.0.6",
+    "dayjs": "^1.10.7",
+    "dumi": "^1.1.38",
+    "ejs": "^3.1.6",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "father-build": "^1.20.4",
+    "husky": "^7.0.4",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "jest-preview": "^0.2.5",
+    "jest-watch-typeahead": "^1.1.0",
+    "lint-staged": "^12.1.2",
+    "npm-run-all": "^4.1.5",
+    "packw": "~2.2.0",
+    "postcss": "^8.5.6",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "simple-redux-store": "^1.0.2",
+    "ts-jest": "^28.0.3",
+    "typescript": "^4.7.4",
+    "yargs": "^17.3.0"
+  },
+  "files": [
+    "dist",
+    "es",
+    "types"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,less}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.8.3",
+    "@react-spring/web": "^9.4.2",
+    "@types/sortablejs": "~1.13.0",
+    "antd": "^4.20.6",
+    "clsx": "^1.1.1",
+    "color": "^4.1.0",
+    "i18next": "^21.6.16",
+    "intersection-observer": "^0.12.0",
+    "nanoid": "^3.0.0",
+    "rc-field-form": "^1.22.1",
+    "react-i18next": "^11.16.7",
+    "react-is": "^17.0.2",
+    "react-transition-group": "^4.4.2",
+    "signature_pad": "^4.0.2",
+    "sortablejs": "^1.14.0",
+    "styled-components": "^5.3.3",
+    "tslib": "^2.4.0",
+    "w-popover": "~2.1.4",
+    "w-qrcode": "~1.1.0",
+    "w-touch": "2.0.0"
+  },
+  "sideEffects": [
+    "*.less"
+  ]
+}

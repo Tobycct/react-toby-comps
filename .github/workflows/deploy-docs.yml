@@ -1,0 +1,42 @@
+name: Deploy Dumi Docs to GitHub Pages
+
+# 触发条件：当 push 到 main 分支时执行
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # 运行环境：Ubuntu 最新版
+    steps:
+      # 1. 拉取代码到运行环境
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 安装 Node.js（指定版本，与本地一致即可）
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16' # 推荐 16+，根据项目实际需求调整
+          cache: 'npm' # 缓存 npm 依赖，加速构建
+
+      # 3. 安装项目依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 4. 构建 Dumi 文档（生成静态产物）
+      - name: Build docs
+        run: npm run build
+
+      # 5. 部署到 GitHub Pages（使用现成的 Action 工具）
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # GitHub 密钥（无需手动创建，Actions 自动提供）
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 构建产物目录（与 dumi.config 中的 outputPath 一致）
+          publish_dir: ./docs
+          # 部署到 gh-pages 分支（默认，无需修改）
+          publish_branch: gh-pages
+          # 强制覆盖历史提交（避免冲突）
+          force_orphan: true
