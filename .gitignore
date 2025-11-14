@@ -8,3 +8,7 @@ output
 .mfsu-prod
 coverage
 docs-dist
+types
+es
+mdx
+dist

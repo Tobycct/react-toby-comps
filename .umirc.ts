@@ -19,6 +19,16 @@ export default defineConfig({
       output: './.mfsu-dev',
     },
   },
+  extraBabelPlugins: [
+    [
+      'import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: 'css',
+      }
+    ],
+  ],
   chainWebpack: function (config, { webpack, env }) {
     config.merge({
       cache: {
@@ -34,18 +44,8 @@ export default defineConfig({
   dynamicImport: false,
   locales: [['zh-CN', '中文']],
   hash: true,
-  webpack5: {},
   fastRefresh: {},
   apiParser: {
-    // 自定义属性过滤配置，也可以是一个函数，用法参考：https://github.com/styleguidist/react-docgen-typescript/#propfilter
-    // propFilter: {
-    //   // 是否忽略从 node_modules 继承的属性，默认值为 false
-    //   skipNodeModules: true,
-    //   // 需要忽略的属性名列表，默认为空数组
-    //   skipPropsWithName: [],
-    //   // 是否忽略没有文档说明的属性，默认值为 false
-    //   skipPropsWithoutDoc: false,
-    // },
     propFilter: (prop, component) => {
       if (prop.declarations !== undefined && prop.declarations.length > 0) {
         const hasPropAdditionalDescription = prop.declarations.find((declaration) => {

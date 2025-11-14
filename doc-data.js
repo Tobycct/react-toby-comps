@@ -7,6 +7,10 @@ module.exports = [
         name: 'DKTag',
         title: 'DKTag标签',
       },
+      {
+        name: 'SelectInput',
+        title: 'SelectInput选择输入框',
+      },
     ],
   },
 ];

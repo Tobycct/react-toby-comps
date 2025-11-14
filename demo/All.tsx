@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 const demos = [
   'DKTag',
+  'SelectInput',
 ];
 
 export default function All() {

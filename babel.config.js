@@ -16,6 +16,14 @@ module.exports = (api) => {
           pure: true,
         },
       ],
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "css"  // 或 "true"（加载 LESS，需额外配置）
+        }
+      ]
     ],
   };
 };

@@ -1,4 +1,5 @@
 export { default as DKTag } from './DKTag';
+export { default as SelectInput } from './SelectInput';
 
 /** only has static method */
 

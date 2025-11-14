@@ -10,6 +10,10 @@ const routes = [
     path: '/DKTag',
     component: lazy(() => import('./DKTag')),
   },
+  {
+    path: '/SelectInput',
+    component: lazy(() => import('./SelectInput')),
+  },
 ];
 
 export default routes;
